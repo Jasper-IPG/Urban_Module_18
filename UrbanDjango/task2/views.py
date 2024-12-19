@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 
 
 # Create your views here.
-def function_view(request):
+def func_view(request):
     return render(request, 'func_template.html')
 
 
