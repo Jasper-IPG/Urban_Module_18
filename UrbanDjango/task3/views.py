@@ -4,7 +4,7 @@ from django.views.generic import TemplateView
 
 # Create your views here.
 def main_page(request):
-    return render(request, 'main_page.html')
+    return render(request, 'third_task/main_page.html')
 
 
 def aqara(request):
@@ -18,7 +18,7 @@ def aqara(request):
         'text_2': lightning,
         'text_3': hubs,
     }
-    return render(request, 'first_page.html', context)
+    return render(request, 'third_task/first_page.html', context)
 
 
 def moes(request):
@@ -32,4 +32,4 @@ def moes(request):
         'text_2': thermostat,
         'text_3': socket,
     }
-    return render(request, 'second_page.html', context)
+    return render(request, 'third_task/second_page.html', context)

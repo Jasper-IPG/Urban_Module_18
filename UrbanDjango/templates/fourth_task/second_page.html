@@ -1,0 +1,16 @@
+{% extends 'fourth_task/menu.html' %}
+
+{% block title %}Умный дом MOES{% endblock %}
+
+{% block pagename %}<h1>{{ title }}</h1>{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for category in categories %}
+            <li><h2>{{ category }}   <button>Подробнее</button></h2></li>
+        {% endfor %}
+    </ul>
+    <button><a href="/">Вернуться на главную</a></button>
+{% endblock %}
+
+
